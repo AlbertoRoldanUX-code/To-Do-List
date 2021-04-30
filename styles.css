@@ -22,7 +22,8 @@ h2 {
   color: #2b2b2b;
 }
 
-.input2 {
+.input2,
+.input3 {
   width: 90px;
   padding: 12px 20px;
   margin: 8px 0;
