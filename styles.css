@@ -3,7 +3,8 @@ body {
   background-color: aliceblue;
 }
 
-.h1 {
+h1,
+h2 {
   text-align: center;
   margin: 30px auto;
   max-width: 950px;
@@ -57,7 +58,6 @@ body {
   -moz-border-radius: 8px;
   border-radius: 8px;
   color: #fff;
-  font-family: Montserrat, sans-serif;
   font-size: 20px;
   font-weight: 100;
   -webkit-box-shadow: 1px 1px 1px 0 #000;
