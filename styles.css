@@ -48,7 +48,7 @@ h2 {
   background-color: #3e3f46;
   margin: auto;
   max-width: 300px;
-  padding: 20px;
+  padding: 40px;
   text-align: left;
 }
 
@@ -122,4 +122,11 @@ h2 {
 
 .tasks {
   display: inline-block;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 800px) {
+  .form {
+    padding: 20px;
+  }
 }

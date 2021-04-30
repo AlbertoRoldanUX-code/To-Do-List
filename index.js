@@ -8,7 +8,19 @@ const input3 = document.querySelector(".input3");
 
 const twenty = document.querySelector(".twenty");
 
+//Focus on textarea
 input1.focus();
+
+//Function that limits number of characters to 2
+const charLimit = function () {
+  if (this.value.length > 2) {
+    this.value = this.value.slice(0, 2);
+  }
+};
+
+//Limit number of characters
+input2.oninput = charLimit;
+input3.oninput = charLimit;
 
 btnForm.addEventListener("click", function () {
   //Get task
@@ -32,7 +44,7 @@ btnForm.addEventListener("click", function () {
   //Display task in their respective div
   document.querySelector(`.div${sum}`).insertAdjacentHTML("afterbegin", html);
 
-  //Delete tasks
+  //Delete task when clicking on btn2
   document.querySelector(".btn2").addEventListener("click", function (e) {
     const removeTarget = e.target.parentNode.parentNode;
     removeTarget.style.opacity = "0";
