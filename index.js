@@ -30,8 +30,8 @@ btnForm.addEventListener("click", function () {
   const sum = Number(input2.value) + Number(input3.value);
 
   //Show error message if there's no task
-  if (input1.value === "") {
-    alert("Please fill out a task");
+  if (input1.value === "" || input2.value === "" || input3.value === "") {
+    alert("Please fill out every field");
   } else {
     // Clear input fields
     input1.value = input2.value = input3.value = "";
