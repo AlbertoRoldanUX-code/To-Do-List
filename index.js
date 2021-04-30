@@ -8,6 +8,8 @@ const input3 = document.querySelector(".input3");
 
 const twenty = document.querySelector(".twenty");
 
+input1.focus();
+
 btnForm.addEventListener("click", function () {
   //Get task
   const task = input1.value;
