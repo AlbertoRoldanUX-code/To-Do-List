@@ -18,10 +18,8 @@ btnForm.addEventListener("click", function (e) {
   //Calculate sum of both inputs
   const sum = Number(input2.value) + Number(input3.value);
 
-  console.log(sum, task);
-
   // Clear input fields
-  input1.value = input2.value = "";
+  input1.value = input2.value = input3.value = "";
 
   //Create element
   const html = `<h1>${task}</h1>`;

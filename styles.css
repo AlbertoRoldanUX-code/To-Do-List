@@ -50,13 +50,6 @@ h2 {
 
 .btn {
   background: #00ff9d;
-  background-image: -webkit-linear-gradient(top, #00ff9d, #00ff9d);
-  background-image: -moz-linear-gradient(top, #00ff9d, #00ff9d);
-  background-image: -ms-linear-gradient(top, #00ff9d, #00ff9d);
-  background-image: -o-linear-gradient(top, #00ff9d, #00ff9d);
-  background-image: -webkit-gradient(to bottom, #00ff9d, #00ff9d);
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
   border-radius: 8px;
   color: #fff;
   font-size: 20px;
@@ -65,9 +58,53 @@ h2 {
   -moz-box-shadow: 1px 1px 1px 0 #000;
   box-shadow: 1px 1px 1px 0 #000;
   text-shadow: 1px 1px 20px #000;
-  text-decoration: none;
   cursor: pointer;
   padding: 14px 16px;
   text-align: center;
   margin-top: 20px;
+}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.btn2 {
+  background: #00ff9d;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 100;
+  -moz-box-shadow: 1px 1px 1px 0 #000;
+  text-shadow: 1px 1px 20px #000;
+  cursor: pointer;
+  /* padding: 14px 14px; */
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.btn:hover,
+.btn2:hover {
+  border: solid #337fed 1px;
+  background: #4f8852;
+}
+
+.task {
+  border: solid #ad6254 1px;
+  border-radius: 5px;
+  padding: 1.5rem 2.75rem;
+  margin: 1.75rem auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 2.5rem;
+  transition: all 0.5s, transform 1ms;
+  max-width: 400px;
+  display: flex;
+}
+
+.tasks {
+  display: inline-block;
 }
