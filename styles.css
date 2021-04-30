@@ -79,7 +79,7 @@ h2 {
 }
 
 .btn2 {
-  background: #00ff9d;
+  background: #cf1b1b;
   border-radius: 50%;
   color: #fff;
   font-weight: 100;
@@ -95,16 +95,20 @@ h2 {
   margin-bottom: auto;
 }
 
-.btn:hover,
-.btn2:hover {
+.btn:hover {
   border: solid #337fed 1px;
   background: #4f8852;
+}
+
+.btn2:hover {
+  border: solid #337fed 1px;
+  background: #fc0606;
 }
 
 .task {
   border: solid #ad6254 1px;
   border-radius: 5px;
-  padding: 1.5rem 2.75rem;
+  padding: 1rem 2rem;
   margin: 1.75rem auto;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem 2.5rem;
