@@ -68,8 +68,8 @@ h2 {
   text-decoration: none;
 }
 
-.margin-top {
-  margin-top: 20px;
+.margin {
+  margin: 20px 0 10px;
 }
 
 .btn:active {

@@ -29,4 +29,9 @@ btnForm.addEventListener("click", function () {
 
   //Display task in their respective div
   document.querySelector(`.div${sum}`).insertAdjacentHTML("afterbegin", html);
+
+  //Delete tasks
+  document.querySelector(".btn2").addEventListener("click", function () {
+    this.parentElement.remove();
+  });
 });
