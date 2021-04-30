@@ -33,7 +33,11 @@ btnForm.addEventListener("click", function () {
   document.querySelector(`.div${sum}`).insertAdjacentHTML("afterbegin", html);
 
   //Delete tasks
-  document.querySelector(".btn2").addEventListener("click", function () {
-    this.parentElement.remove();
+  document.querySelector(".btn2").addEventListener("click", function (e) {
+    const removeTarget = e.target.parentNode.parentNode;
+    removeTarget.style.opacity = "0";
+    setTimeout(function () {
+      removeTarget.parentNode.removeChild(removeTarget);
+    }, 1000);
   });
 });
