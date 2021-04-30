@@ -8,10 +8,7 @@ const input3 = document.querySelector(".input3");
 
 const twenty = document.querySelector(".twenty");
 
-btnForm.addEventListener("click", function (e) {
-  //Prevent form from submitting
-  e.preventDefault();
-
+btnForm.addEventListener("click", function () {
   //Get task
   const task = input1.value;
 

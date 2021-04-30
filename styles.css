@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: aliceblue;
@@ -59,8 +63,12 @@ h2 {
   box-shadow: 1px 1px 1px 0 #000;
   text-shadow: 1px 1px 20px #000;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 11px 13px;
   text-align: center;
+  text-decoration: none;
+}
+
+.margin-top {
   margin-top: 20px;
 }
 
