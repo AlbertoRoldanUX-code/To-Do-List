@@ -45,7 +45,7 @@ btnForm.addEventListener("click", function () {
       </div>`;
 
     //Display task in their respective div
-    document.querySelector(`.div${sum}`).insertAdjacentHTML("afterbegin", html);
+    document.querySelector(`.div${sum}`).insertAdjacentHTML("beforeend", html);
   }
 
   //Delete task when clicking on btn2
