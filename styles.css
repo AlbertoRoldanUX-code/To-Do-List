@@ -5,13 +5,13 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   background-color: aliceblue;
+  margin: 30px auto;
+  max-width: 950px;
 }
 
 h1,
 h2 {
   text-align: center;
-  margin: 30px auto;
-  max-width: 950px;
 }
 
 .input1 {
@@ -122,6 +122,25 @@ h2 {
 
 .tasks {
   display: inline-block;
+}
+
+ol {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+}
+
+ol li {
+  margin: 0 0 0.5rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+  font-size: 0.8rem;
+}
+ol li::before {
+  position: absolute;
+  --size: 32px;
+  left: calc(-1 * var(--size) - 10px);
+  content: "0" counter(my-awesome-counter);
+  font-size: 3rem;
 }
 
 /* Responsiveness */

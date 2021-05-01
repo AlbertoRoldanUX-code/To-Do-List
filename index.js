@@ -37,12 +37,16 @@ btnForm.addEventListener("click", function () {
     input1.value = input2.value = input3.value = "";
     //Create element
     const html = `
-      <div class="task">
-          <h3 class="tasks">${task}</h3>
-          <button class="btn2">
-              <i class="fa fa-times" aria-hidden="true"></i>
-          </button>
-      </div>`;
+    <li>
+    
+    <div class="task">
+        <h3 class="tasks">${task}</h3>
+        <button class="btn2">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+    </div>
+    </li>
+      `;
 
     //Display task in their respective div
     document.querySelector(`.div${sum}`).insertAdjacentHTML("beforeend", html);
@@ -53,7 +57,7 @@ btnForm.addEventListener("click", function () {
     const removeTarget = e.target.parentNode.parentNode;
     removeTarget.style.opacity = "0";
     setTimeout(function () {
-      removeTarget.parentNode.removeChild(removeTarget);
+      removeTarget.parentNode.remove();
     }, 1000);
   });
 });
