@@ -72,6 +72,10 @@ h2 {
   margin: 20px 0 10px;
 }
 
+.btn:hover {
+  border: solid #337fed 1px;
+  background: #4f8852;
+}
 .btn:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
@@ -83,8 +87,7 @@ h2 {
   border-radius: 50%;
   color: #fff;
   font-weight: 100;
-  -moz-box-shadow: 1px 1px 1px 0 #000;
-  text-shadow: 1px 1px 20px #000;
+  /* text-shadow: 1px 1px 20px #000; */
   cursor: pointer;
   height: 40px;
   width: 40px;
@@ -96,11 +99,6 @@ h2 {
   opacity: 1;
   -webkit-transition: opacity 1000ms linear;
   transition: opacity 1000ms linear;
-}
-
-.btn:hover {
-  border: solid #337fed 1px;
-  background: #4f8852;
 }
 
 .btn2:hover {

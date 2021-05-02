@@ -6,8 +6,6 @@ const input1 = document.querySelector(".input1");
 const input2 = document.querySelector(".input2");
 const input3 = document.querySelector(".input3");
 
-const twenty = document.querySelector(".twenty");
-
 //Focus on textarea
 input1.focus();
 
@@ -19,8 +17,7 @@ const charLimit = function () {
 };
 
 //Limit number of characters
-input2.oninput = charLimit;
-input3.oninput = charLimit;
+input2.oninput = input3.oninput = charLimit;
 
 btnForm.addEventListener("click", function () {
   //Get task
