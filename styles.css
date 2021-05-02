@@ -85,13 +85,12 @@ h2 {
 .btn2 {
   background: #cf1b1b;
   border-radius: 50%;
+  border: none;
   color: #fff;
   font-weight: 100;
-  /* text-shadow: 1px 1px 20px #000; */
   cursor: pointer;
   height: 40px;
   width: 40px;
-  text-align: center;
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
