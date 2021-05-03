@@ -114,6 +114,7 @@ h2 {
   transition: all 0.5s, transform 1ms;
   max-width: 400px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 #tasks {
