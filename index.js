@@ -20,8 +20,10 @@ const charLimit = function () {
 input2.oninput = input3.oninput = charLimit;
 
 btnForm.addEventListener("click", function () {
-  //Get task
+  //Get task and inputs
   const task = input1.value;
+  const importance = Number(input2.value);
+  const urgency = Number(input3.value);
 
   //Calculate sum of both inputs
   const sum = Number(input2.value) + Number(input3.value);
@@ -31,13 +33,18 @@ btnForm.addEventListener("click", function () {
     alert("Please fill out every field");
   }
 
-  //Display task if values are greate than 0
-  if (input2.value > 0 && input3.value > 0) {
+  //Show error message if inputs are not between 1 and 10
+  if (importance < 0 || importance > 10 || urgency < 0 || urgency > 10) {
+    return alert("Please enter values between 1 and 10");
+  }
+
+  //Display task if data is valid
+  if (0 < importance <= 10 && 0 < urgency <= 10) {
     // Clear input fields
     input1.value = input2.value = input3.value = "";
     //Create element
     const html = `
-    <li class="fade-out">
+    <li>
       <div class="task">
           <h3>${task}</h3>
           <button class="btn2">
@@ -56,15 +63,14 @@ btnForm.addEventListener("click", function () {
 
 //Delete task when clicking on btn2
 const removeTask = function (e) {
-  const element = e.target;
   if (
-    element.classList.contains("btn2") ||
-    element.classList.contains("fa-times")
+    e.target.classList.contains("btn2") ||
+    e.target.classList.contains("fa-times")
   ) {
     //Fade out effect
-    e.target.closest(".fade-out").style.opacity = "0";
+    e.target.closest("li").style.opacity = "0";
     setTimeout(function () {
-      element.closest("li").remove();
+      e.target.closest("li").remove();
     }, 1000);
   }
 };

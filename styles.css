@@ -96,13 +96,6 @@ h2 {
   margin-bottom: auto;
 }
 
-.fade-out {
-  /* Fade out effect */
-  opacity: 1;
-  -webkit-transition: opacity 1000ms linear;
-  transition: opacity 1000ms linear;
-}
-
 .btn2:hover {
   border: solid #337fed 1px;
   background: #fc0606;
@@ -128,6 +121,13 @@ h2 {
 ol {
   counter-reset: my-awesome-counter;
   list-style: none;
+}
+
+li {
+  opacity: 1;
+  /* Fade effect */
+  -webkit-transition: opacity 1000ms linear;
+  transition: opacity 1000ms linear;
 }
 
 ol li {
