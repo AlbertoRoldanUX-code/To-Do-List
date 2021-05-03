@@ -94,6 +94,9 @@ h2 {
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.fade-out {
   /* Fade out effect */
   opacity: 1;
   -webkit-transition: opacity 1000ms linear;
