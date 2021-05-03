@@ -29,7 +29,11 @@ btnForm.addEventListener("click", function () {
   //Show error message if there's no task
   if (input1.value === "" || input2.value === "" || input3.value === "") {
     alert("Please fill out every field");
-  } else {
+  }
+
+  //Display tasks if values are greate than 0
+
+  if (input2.value > 0 && input3.value > 0) {
     // Clear input fields
     input1.value = input2.value = input3.value = "";
     //Create element
