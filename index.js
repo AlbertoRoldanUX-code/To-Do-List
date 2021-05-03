@@ -37,7 +37,7 @@ btnForm.addEventListener("click", function () {
     <li>
     
     <div class="task">
-        <h3 class="tasks">${task}</h3>
+        <h3>${task}</h3>
         <button class="btn2">
             <i class="fa fa-times" aria-hidden="true"></i>
         </button>

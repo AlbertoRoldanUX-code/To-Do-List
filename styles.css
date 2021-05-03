@@ -116,8 +116,7 @@ h2 {
   display: flex;
 }
 
-.tasks {
-  display: inline-block;
+#tasks {
   max-width: 600px;
   margin: auto;
 }
