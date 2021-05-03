@@ -118,6 +118,8 @@ h2 {
 
 .tasks {
   display: inline-block;
+  max-width: 600px;
+  margin: auto;
 }
 
 ol {
