@@ -7,7 +7,7 @@ body {
   background-color: aliceblue;
   margin: 0;
   position: relative;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 .firstDiv {
