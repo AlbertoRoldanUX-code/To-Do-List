@@ -7,13 +7,13 @@ body {
   background-color: aliceblue;
   margin: 0;
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .firstDiv {
   margin: 30px auto;
   max-width: 950px;
-  padding-bottom: 2.5rem;
+  padding-bottom: 6rem;
 }
 
 h1,
