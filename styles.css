@@ -5,6 +5,10 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   background-color: aliceblue;
+  margin: 0;
+}
+
+.margin950 {
   margin: 30px auto;
   max-width: 950px;
 }
@@ -142,6 +146,25 @@ ol li::before {
   left: calc(-1 * var(--size) - 10px);
   content: "0" counter(my-awesome-counter);
   font-size: 3rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #3e3f46;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-top: auto;
+}
+
+.footer-link {
+  color: #eee;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  color: #aaa;
+  text-align: center;
 }
 
 /* Responsiveness */
