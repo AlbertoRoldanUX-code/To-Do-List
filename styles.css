@@ -149,4 +149,8 @@ ol li::before {
   .form {
     padding: 20px;
   }
+
+  .task {
+    margin: 1.75rem 0.5rem;
+  }
 }
