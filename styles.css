@@ -7,12 +7,13 @@ body {
   background-color: aliceblue;
   margin: 0;
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
-.margin950 {
+.firstDiv {
   margin: 30px auto;
   max-width: 950px;
+  padding-bottom: 2.5rem;
 }
 
 h1,
@@ -153,10 +154,12 @@ ol li::before {
 /* Footer */
 .footer {
   background-color: #3e3f46;
-  position: absolute;
   width: 100%;
   bottom: 0;
-  margin-top: auto;
+  position: absolute;
+  clear: both;
+  position: relative;
+  height: 20px;
 }
 
 .footer-link {
