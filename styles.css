@@ -120,6 +120,16 @@ h2 {
   flex-wrap: wrap;
 }
 
+.li {
+  opacity: 0;
+}
+
+.fadeIn {
+  opacity: 1;
+  -webkit-transition: opacity 1000ms linear;
+  transition: opacity 1000ms linear;
+}
+
 #tasks {
   max-width: 600px;
   margin: auto;
@@ -130,12 +140,12 @@ ol {
   list-style: none;
 }
 
-li {
+/* li {
   opacity: 1;
   /* Fade effect */
-  -webkit-transition: opacity 1000ms linear;
-  transition: opacity 1000ms linear;
-}
+/* -webkit-transition: opacity 1000ms linear;
+  transition: opacity 1000ms linear; */
+/* } */
 
 ol li {
   margin: 0 0 0.5rem 0;

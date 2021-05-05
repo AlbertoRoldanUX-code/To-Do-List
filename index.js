@@ -44,7 +44,7 @@ btnForm.addEventListener("click", function () {
     input1.value = input2.value = input3.value = "";
     //Create element
     const html = `
-    <li>
+    <li class="li">
       <div class="task">
           <h3>${task}</h3>
           <button class="btn2">
@@ -54,12 +54,17 @@ btnForm.addEventListener("click", function () {
     </li>
       `;
 
-    //Display task in their respective div
+    //Display html
     document.querySelector(`.div${sum}`).insertAdjacentHTML("beforeend", html);
+
+    // Add fadeIn class to all .li after 1 millisecond
+    setTimeout(() => {
+      document
+        .querySelectorAll(".li")
+        .forEach((li) => li.classList.add("fadeIn"));
+    }, 1);
   }
 });
-
-//
 
 //Delete task when clicking on btn2
 const removeTask = function (e) {
